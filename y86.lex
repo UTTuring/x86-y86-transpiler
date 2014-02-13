@@ -2,7 +2,7 @@
    y86 lexxer
 */
 
-digit       [0-9]
+digit       [0-9]*
 immediate   ${digit}
 
 %%
