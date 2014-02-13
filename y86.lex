@@ -9,6 +9,7 @@ number      [0-9]*
 immediate   \${number}
 register    %[eaxcdbpsidhil]{2,3}
 memory      0[xX]{hex}
+rrmovl      "movl {register}, {register}"
 
 %%
 {immediate}     printf("Found immediate %s\n", yytext);
