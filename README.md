@@ -7,7 +7,7 @@ Lexxer Instructions
 -------------------
 
 1. Make sure you have flex installed
-2. Run `flex y86.lex`
-3. Run `make`
-4. Execute `./lex`
+2. Run `make`
+3. Execute `./lex`
+4. Test lexxer (from stdin)
 5. Exit with Ctrl+D
