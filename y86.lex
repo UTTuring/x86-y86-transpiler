@@ -3,11 +3,13 @@
 */
 
 digit       [0-9]*
-immediate   ${digit}
+immediate   \${digit}
+register    %[eaxcdbpsidhil]{2,3}
 
 %%
-{digit}     printf("Found a digit %s !\n", yytext);
-.           printf("");
+{immediate}     printf("Found immediate %s !\n", yytext);
+{register}      printf("Found register %s !\n", yytext);
+.               printf("");
 %%
 
 main(){
